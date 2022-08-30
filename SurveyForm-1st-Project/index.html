@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">FreeCodeCamp Survey Form</h1>
+      <p id="description">Ahmed Ben Ismael Code</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label id="name-label">Name: <input id="name" type="text" placeholder="Type your Name" required/></label>
+        <label id="email-label">Email: <input id="email" type="email" placeholder="Type your Email" required/></label>
+        <label id="number-label">Age: (Optional) <input id="number" name="age" type="number" min="17" max="100" placeholder="Type your age"/></label>
+        <lable>Select What You Are:
+          <select id="dropdown">
+            <option>Start Over</option>
+            <option>Choice to me</option>
+            <option>Choice to you</option>
+            <option>Choice to us</option>
+          </select>
+        </lable>
+        <fieldset>
+          <lable>Tell me what you want...</lable>
+          <lable><input class="big-btn" type="radio" name="num-choice" value="Number" checked/> Number One</lable>
+          <lable><input class="big-btn" type="radio" name="num-choice" value="Number"/> Number Two</lable>
+          <lable><input class="big-btn" type="radio" name="num-choice" value="Number"/> Number Three</lable>
+          <lable><input class="big-btn" type="radio" name="num-choice" value="Number"/> Number Four</lable>
+        </fieldset>
+        <fieldset>
+          <lable><input class="big-btn" type="checkbox" value="check-from" checked/> Check What You Want</lable>
+          <lable><input class="big-btn" type="checkbox" value="check-from"/> Check What You Want</lable>
+          <lable><input class="big-btn" type="checkbox" value="check-from"/> Check What You Want</lable>
+          <lable><input class="big-btn" type="checkbox" value="check-from"/> Check What You Want</lable>
+        </fieldset>
+        <lable class="textarea">Type Your Letter: 
+          <textarea placeholder="Your Text Here!" rows="4" cols="40"></textarea>
+        </lable>
+        <button id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
