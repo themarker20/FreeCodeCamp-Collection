@@ -21,6 +21,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	background: #166589;
+	z-index: 999;
 }
 
 header h1 {
@@ -36,6 +37,7 @@ header h1 {
 }
 
 main.bg {
+	margin: 5% 0;
 	height: 100vh;
 	width: 100%;
 	display: flex;
@@ -46,16 +48,18 @@ main.bg {
 section {
 	width: 95%;
 	margin: auto;
-	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
-    gap: 15px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 main.bg section a {
 	text-decoration: none;
 	color: #fff;
-	padding: 25px 20px;
-	background-color: transparent;
+	width: 180px;
+	height: 100px;
+	margin: 1%;
 	border: 2px solid #fff;
 	border-radius: 10px;
 	display: flex;
@@ -94,9 +98,6 @@ main.bg section a:hover P{
 }
 
 @media only screen and (max-width: 900px) {
-	main.bg {
-		margin: 20% 0;
-	}
 	main.bg a p  {
 		font-size: 1rem;
 	}
@@ -104,10 +105,17 @@ main.bg section a:hover P{
 
 
 @media only screen and (max-width: 420px) {
-	main.bg section a {
-		padding: 20px 8px;
+	main.bg section {
+		padding: 25% 0;
 	}
-	main.bg a p  {
+
+	main.bg section a {
+		width: 125px;
+		height: 60px;
+		margin: 2.5%;
+	}
+
+	main.bg section a p  {
 		font-size: 0.8rem;
 	}
 }
@@ -143,7 +151,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3%;
+    margin-top: 10%;
     background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
     text-align: center;
 }
@@ -163,6 +171,8 @@ footer p a {
 @media only screen and (max-width: 750px) {
 	footer  {
 		height: 40px;
+		position: fixed;
+    	bottom: 0;
 	}
 
 	footer p {
